@@ -11,6 +11,7 @@ namespace FourthPractice
             WriteLine("1) Practice 1");
             WriteLine("2) Practice 2");
             WriteLine("3) Practice 3");
+            WriteLine("4) Practice 4");
             WriteLine("0) Exit");
 
             Write("#? ");
@@ -26,6 +27,9 @@ namespace FourthPractice
                     break;
                 case 3:
                     new Practice3().Start();
+                    break;
+                case 4:
+                    new Practice4().Start();
                     break;
                 default:
                     WriteLine("Not a valid option");
