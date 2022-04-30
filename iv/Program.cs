@@ -25,7 +25,7 @@ namespace FourthPractice
                     new Practice2().Start();
                     break;
                 case 3:
-                    //new Practice3().Start();
+                    new Practice3().Start();
                     break;
                 default:
                     WriteLine("Not a valid option");

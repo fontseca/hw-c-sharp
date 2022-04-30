@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Practices\Practice1.cs" />
     <Compile Include="Practices\Practice2.cs" />
+    <Compile Include="Practices\Practice3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
