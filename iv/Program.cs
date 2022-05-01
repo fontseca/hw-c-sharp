@@ -22,6 +22,7 @@ namespace FourthPractice
                     WriteLine("5) Practice 5");
                     WriteLine("6) Practice 6");
                     WriteLine("7) Practice 7");
+                    WriteLine("8) Practice 8");
 
                     Write("\n#? ");
                     opt = int.Parse(ReadLine());
@@ -49,6 +50,9 @@ namespace FourthPractice
                             break;
                         case 7:
                             new Practice7().Start();
+                            break;
+                        case 8:
+                            new Practice8().Start();
                             break;
                         default:
                             WriteLine("Not a valid option");

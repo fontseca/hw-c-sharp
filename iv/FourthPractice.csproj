@@ -50,6 +50,7 @@
     <Compile Include="Practices\Practice5.cs" />
     <Compile Include="Practices\Practice6.cs" />
     <Compile Include="Practices\Practice7.cs" />
+    <Compile Include="Practices\Practice8.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
