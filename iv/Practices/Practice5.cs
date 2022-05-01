@@ -7,10 +7,9 @@ namespace FourthPractice.Practices
     // Note: I use a queue just for fun
     internal class Practice5
     {
-
-        private int[,] Array;
-        private int Rows;
-        private int Cols;
+        public int[,] Array;
+        public int Rows;
+        public int Cols;
 
         public void Start()
         {
@@ -43,7 +42,7 @@ namespace FourthPractice.Practices
             }
         }
 
-        private void GenerateArray(bool isRandom)
+        public void GenerateArray(bool isRandom)
         {
             Random random = new Random();
             for (int r = 0; r < this.Rows; ++r)
@@ -55,7 +54,7 @@ namespace FourthPractice.Practices
                 }
         }
 
-        private void PrintArray()
+        public void PrintArray()
         {
             for (int r = 0; r < this.Rows; ++r)
             {
