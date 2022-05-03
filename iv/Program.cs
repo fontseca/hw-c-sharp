@@ -13,7 +13,8 @@ namespace FourthPractice
                 int opt;
                 do
                 {
-                    WriteLine("\nSELECT A PRACTICE:\n");
+                    Clear();
+                    WriteLine("SELECT A PRACTICE:\n");
                     WriteLine("0) Exit");
                     WriteLine("1) Practice 1");
                     WriteLine("2) Practice 2");
@@ -24,6 +25,7 @@ namespace FourthPractice
                     WriteLine("7) Practice 7");
                     WriteLine("8) Practice 8");
                     WriteLine("9) Practice 9");
+                    WriteLine("10) Practice 10");
 
                     Write("\n#? ");
                     opt = int.Parse(ReadLine());
@@ -33,30 +35,43 @@ namespace FourthPractice
                         case 0: WriteLine("bye."); return;
                         case 1:
                             new Practice1().Start();
+                            ReadKey();
                             break;
                         case 2:
                             new Practice2().Start();
+                            ReadKey();
                             break;
                         case 3:
                             new Practice3().Start();
+                            ReadKey();
                             break;
                         case 4:
                             new Practice4().Start();
+                            ReadKey();
                             break;
                         case 5:
                             new Practice5().Start();
+                            ReadKey();
                             break;
                         case 6:
                             new Practice6().Start();
+                            ReadKey();
                             break;
                         case 7:
                             new Practice7().Start();
+                            ReadKey();
                             break;
                         case 8:
                             new Practice8().Start();
+                            ReadKey();
                             break;
                         case 9:
                             new Practice9().Start();
+                            ReadKey();
+                            break;
+                        case 10:
+                            new Practice10().Start();
+                            ReadKey();
                             break;
                         default:
                             WriteLine("Not a valid option");
