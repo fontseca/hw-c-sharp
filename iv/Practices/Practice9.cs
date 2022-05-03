@@ -9,8 +9,8 @@ namespace FourthPractice.Practices
         public void Start()
         {
             int[] arr;
-            var oddStack = new Stack<int>();
-            var evenStack = new Stack<int>();
+            var oddQueue = new Queue<int>();
+            var evenQueue = new Queue<int>();
             string N;
             Random r = new Random();
 
@@ -22,24 +22,28 @@ namespace FourthPractice.Practices
             for (int i = 0; i < arr.Length; i++) arr[i] = r.Next(1, 99);
 
             WriteLine("\n\nOriginal array:");
-            for (int i = 0; i < arr.Length; i++) Write($" {arr[i]} ");
-
             for (int i = 0; i < arr.Length; i++)
-            if (Convert.ToBoolean(arr[i] & 1))
-                oddStack.Push(arr[i]);
-            else evenStack.Push(arr[i]);
+            {
+                Write($" {arr[i]} ");
 
-            // show divided array
+                if (Convert.ToBoolean(arr[i] & 1))
+                    oddQueue.Enqueue(arr[i]);
+                else
+                    evenQueue.Enqueue(arr[i]);
+            }
+
+            // divide array
             for (int i = 0; i < arr.Length; ++i)
-                if (oddStack.Count > 0)
-                    arr[i] = oddStack.Pop();
-                else if (evenStack.Count > 0) arr[i] = evenStack.Pop();
+                if (oddQueue.Count > 0)
+                    arr[i] = oddQueue.Dequeue();
+                else if (evenQueue.Count > 0) arr[i] = evenQueue.Dequeue();
 
             // print divided array
-            WriteLine("\n\nSplit array:");
+            WriteLine("\n\nDivided array:");
             for (int i = 0; i < arr.Length; i++)
                 Write($" {arr[i]} ");
 
+            WriteLine("");
         }
     }
 }
