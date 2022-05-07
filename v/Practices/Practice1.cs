@@ -32,10 +32,8 @@ namespace FifthPractice.Practices
 
         }
 
-        private int GetDigitsAmount(int n)
-        {
-            return n.ToString().Length;
-        }
+        private int GetDigitsAmount(int n) => n.ToString().Length;
+
 
         private int GetDigitsSum(int x)
         {
