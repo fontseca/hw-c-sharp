@@ -32,7 +32,7 @@ namespace FifthPractice
                             ReadKey();
                             break;
                         case 2:
-                            //new Practice2().Start();
+                            new Practice2().Start();
                             ReadKey();
                             break;
                         case 3:
