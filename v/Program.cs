@@ -26,7 +26,7 @@ namespace FifthPractice
 
                     switch (opt)
                     {
-                        case 0: WriteLine("bye."); return;
+                        case 0: WriteLine("Bye."); return;
                         case 1:
                             new Practice1().Start();
                             ReadKey();
@@ -36,7 +36,7 @@ namespace FifthPractice
                             ReadKey();
                             break;
                         case 3:
-                            //new Practice3().Start();
+                            new Practice3().Start();
                             ReadKey();
                             break;
                         default:
