@@ -1,9 +1,5 @@
 ﻿using System;
 using static System.Console;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FifthPractice.Practices
 {
@@ -22,7 +18,6 @@ namespace FifthPractice.Practices
                 return;
             }
 
-
             WriteLine("Digits amount: {0}", GetDigitsAmount(number));
 
             int sum = GetDigitsSum(number);
@@ -33,7 +28,6 @@ namespace FifthPractice.Practices
         }
 
         private int GetDigitsAmount(int n) => n.ToString().Length;
-
 
         private int GetDigitsSum(int x)
         {
