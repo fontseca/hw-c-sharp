@@ -1,6 +1,8 @@
 ﻿using System;
 using static System.Console;
 
+using SixthPractice.Practices;
+
 namespace SixthPractice
 {
     internal class Program
@@ -26,7 +28,7 @@ namespace SixthPractice
                     {
                         case 0: WriteLine("Bye."); return;
                         case 1:
-                            //new Practice1().Start();
+                            new Practice1().Start();
                             ReadKey();
                             break;
                         case 2:
