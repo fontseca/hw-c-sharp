@@ -14,6 +14,7 @@ namespace SixthPractice.Practices
 
     class Student
     {
+        public int Id;
         public string Name;
         public List<Grade> Grades;
     }
@@ -27,6 +28,7 @@ namespace SixthPractice.Practices
 
             stds.Add(new Student()
             {
+                Id = 1,
                 Name = "Jeremy Fonseca",
                 Grades = new List<Grade>
                 {
@@ -47,6 +49,7 @@ namespace SixthPractice.Practices
 
             stds.Add(new Student()
             {
+                Id = 2,
                 Name = "Kenneth Lola",
                 Grades = new List<Grade>
                 {
@@ -67,6 +70,7 @@ namespace SixthPractice.Practices
 
             stds.Add(new Student()
             {
+                Id = 3,
                 Name = "Raynner Altamirao",
                 Grades = new List<Grade>
                 {
@@ -87,6 +91,7 @@ namespace SixthPractice.Practices
 
             stds.Add(new Student()
             {
+                Id = 4,
                 Name = "Johan Paiz",
                 Grades = new List<Grade>
                 {
@@ -107,6 +112,7 @@ namespace SixthPractice.Practices
 
             stds.Add(new Student()
             {
+                Id = 5,
                 Name = "Pedro Alfonso",
                 Grades = new List<Grade>
                 {
@@ -121,26 +127,6 @@ namespace SixthPractice.Practices
                         GradeId = 2,
                         Name = "Algorithms",
                         Value = 70
-                    }
-                }
-            });
-
-            stds.Add(new Student()
-            {
-                Name = "Jeremy Fonseca",
-                Grades = new List<Grade>
-                {
-                    new Grade()
-                    {
-                        GradeId = 1,
-                        Name = "Math",
-                        Value = 90
-                    },
-                    new Grade()
-                    {
-                        GradeId = 2,
-                        Name = "Algorithms",
-                        Value = 80
                     }
                 }
             });
