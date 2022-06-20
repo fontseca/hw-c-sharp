@@ -35,7 +35,7 @@ namespace SixthPractice
                             new Practice2().Start();
                             break;
                         case 3:
-                            //new Practice3().Start();
+                            new Practice3().Start();
                             ReadKey();
                             break;
                         case 4:
