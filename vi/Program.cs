@@ -20,6 +20,8 @@ namespace SixthPractice
                     WriteLine("1) Practice 1");
                     WriteLine("2) Practice 2");
                     WriteLine("3) Practice 3");
+                    WriteLine("4) Practice 4");
+                    WriteLine("5) Practice 5");
 
                     Write("\n#? ");
                     opt = int.Parse(ReadLine());
@@ -39,11 +41,11 @@ namespace SixthPractice
                             ReadKey();
                             break;
                         case 4:
-                            //new Practice4().Start();
+                            new Practice4().Start();
                             ReadKey();
                             break;
                         case 5:
-                            //new Practice5().Start();
+                            new Practice5().Start();
                             ReadKey();
                             break;
                         default:
